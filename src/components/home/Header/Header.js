@@ -51,7 +51,7 @@ const Header = () => {
                       to={link}
                       state={{ data: location.pathname.split("/")[1] }}
                     >
-                      <li>{title}</li>
+                      <li>{title === "About" ? "Orders" : title}</li>
                     </NavLink>
                   ))}
                 </>

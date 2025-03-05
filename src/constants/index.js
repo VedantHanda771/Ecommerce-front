@@ -27,8 +27,8 @@ export const navBarList = [
   },
   {
     _id: 1003,
-    title: "About",
-    link: "/about",
+    title: "Orders",
+    link: "/Orders",
   },
   {
     _id: 1004,
@@ -43,12 +43,15 @@ export const navBarList = [
 ];
 // =================== NavBarList End here ======================
 // =================== Special Offer data Start here ============
+// Conversion rate from dollars to rupees
+const conversionRate = 82;
+
 export const SplOfferData = [
   {
     _id: "201",
     img: spfOne,
     productName: "Cap for Boys",
-    price: "35.00",
+    price: (35.00 * conversionRate).toFixed(2), // Converted to rupees
     color: "Blank and White",
     badge: true,
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
@@ -57,7 +60,7 @@ export const SplOfferData = [
     _id: "202",
     img: newArrFour,
     productName: "Tea Table",
-    price: "180.00",
+    price: (180.00 * conversionRate).toFixed(2), // Converted to rupees
     color: "Gray",
     badge: true,
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
@@ -66,7 +69,7 @@ export const SplOfferData = [
     _id: "203",
     img: spfThree,
     productName: "Headphones",
-    price: "25.00",
+    price: (25.00 * conversionRate).toFixed(2), // Converted to rupees
     color: "Mixed",
     badge: true,
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
@@ -75,7 +78,7 @@ export const SplOfferData = [
     _id: "204",
     img: spfFour,
     productName: "Sun glasses",
-    price: "220.00",
+    price: (220.00 * conversionRate).toFixed(2), // Converted to rupees
     color: "Black",
     badge: true,
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
@@ -90,7 +93,7 @@ export const paginationItems = [
     _id: 1001,
     img: spfOne,
     productName: "Cap for Boys",
-    price: "35.00",
+    price: (35.00 * conversionRate).toFixed(2), // Converted to rupees
     color: "Blank and White",
     badge: true,
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
@@ -99,7 +102,7 @@ export const paginationItems = [
     _id: 1002,
     img: spfTwo,
     productName: "Tea Table",
-    price: "180.00",
+    price: (180.00 * conversionRate).toFixed(2), // Converted to rupees
     color: "Gray",
     badge: true,
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
@@ -108,7 +111,7 @@ export const paginationItems = [
     _id: 1003,
     img: spfThree,
     productName: "Headphones",
-    price: "25.00",
+    price: (25.00 * conversionRate).toFixed(2), // Converted to rupees
     color: "Mixed",
     badge: true,
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
@@ -117,7 +120,7 @@ export const paginationItems = [
     _id: 1004,
     img: spfFour,
     productName: "Sun glasses",
-    price: "220.00",
+    price: (220.00 * conversionRate).toFixed(2), // Converted to rupees
     color: "Black",
     badge: true,
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
